@@ -14,6 +14,7 @@
 		E65FCE472AC5E8A300C16019 /* _023_09_30_appGraficos1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65FCE462AC5E8A300C16019 /* _023_09_30_appGraficos1Tests.m */; };
 		E65FCE512AC5E8A300C16019 /* _023_09_30_appGraficos1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65FCE502AC5E8A300C16019 /* _023_09_30_appGraficos1UITests.m */; };
 		E65FCE532AC5E8A300C16019 /* _023_09_30_appGraficos1UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65FCE522AC5E8A300C16019 /* _023_09_30_appGraficos1UITestsLaunchTests.m */; };
+		E65FCE612AC5E99000C16019 /* Vista1.m in Sources */ = {isa = PBXBuildFile; fileRef = E65FCE602AC5E99000C16019 /* Vista1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		E65FCE4C2AC5E8A300C16019 /* 2023_09_30_appGraficos1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2023_09_30_appGraficos1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65FCE502AC5E8A300C16019 /* _023_09_30_appGraficos1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _023_09_30_appGraficos1UITests.m; sourceTree = "<group>"; };
 		E65FCE522AC5E8A300C16019 /* _023_09_30_appGraficos1UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _023_09_30_appGraficos1UITestsLaunchTests.m; sourceTree = "<group>"; };
+		E65FCE5F2AC5E99000C16019 /* Vista1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vista1.h; sourceTree = "<group>"; };
+		E65FCE602AC5E99000C16019 /* Vista1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vista1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				E65FCE342AC5E8A200C16019 /* AppDelegate.m */,
 				E65FCE362AC5E8A300C16019 /* Assets.xcassets */,
 				E65FCE382AC5E8A300C16019 /* MainMenu.xib */,
+				E65FCE5F2AC5E99000C16019 /* Vista1.h */,
+				E65FCE602AC5E99000C16019 /* Vista1.m */,
 				E65FCE3B2AC5E8A300C16019 /* main.m */,
 				E65FCE3D2AC5E8A300C16019 /* _023_09_30_appGraficos1.entitlements */,
 			);
@@ -254,6 +259,7 @@
 			files = (
 				E65FCE3C2AC5E8A300C16019 /* main.m in Sources */,
 				E65FCE352AC5E8A200C16019 /* AppDelegate.m in Sources */,
+				E65FCE612AC5E99000C16019 /* Vista1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

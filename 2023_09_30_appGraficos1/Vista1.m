@@ -42,36 +42,46 @@
     [[NSColor whiteColor] set];
     
     NSBezierPath *path = [[NSBezierPath alloc] init];
-    [path setLineWidth:3.0];
+    [path setLineWidth:2.0];
     
     srand((unsigned) time(NULL));
     
     /*
-    NSPoint p = [self randomPoint];
-    [path moveToPoint:p];
+     NSPoint p = [self randomPoint];
+     [path moveToPoint:p];
      */
     
     /*
-    for(int i=0; i<15; i++){
-        p = [self randomPoint];
-        [path lineToPoint:p];
-    }
+     for(int i=0; i<15; i++){
+     p = [self randomPoint];
+     [path lineToPoint:p];
+     }
      */
-    
-    // Método para dibujar en la vista
-    [path stroke];
     
     // Rellenar los poligonos
     //[[NSColor orangeColor]set];
     //[path fill];
-   
+    
     // DESHABILITAR EL DIBUJO DE LINEAS
     
     // DIBUJAR UNA ESTRELLA QUE QUE QUEDE CENTRADA EN LA VISTA
     
-    for(int i=0; i<6; i++){
-        
-    }
+    [path moveToPoint:NSMakePoint(rectangulo.origin.x, rectangulo.origin.y)];
+    
+    [path lineToPoint:NSMakePoint(rectangulo.size.width / 2, rectangulo.size.height)];
+    
+    [path lineToPoint:NSMakePoint(rectangulo.size.width, rectangulo.origin.y)];
+    
+    [path lineToPoint:NSMakePoint(rectangulo.origin.x, rectangulo.size.height / 2)];
+    
+    [path lineToPoint:NSMakePoint(rectangulo.size.width, rectangulo.size.height / 2)];
+    
+    [path lineToPoint:NSMakePoint(rectangulo.origin.x + 10, rectangulo.origin.y)];
+    
+    
+    // Método para dibujar en la vista
+    [path stroke];
+    
     
 }
 

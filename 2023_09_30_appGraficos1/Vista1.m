@@ -43,16 +43,20 @@
     
     NSBezierPath *path = [[NSBezierPath alloc] init];
     [path setLineWidth:3.0];
+    
     srand((unsigned) time(NULL));
+    
+    /*
     NSPoint p = [self randomPoint];
     [path moveToPoint:p];
+     */
     
-    
+    /*
     for(int i=0; i<15; i++){
         p = [self randomPoint];
         [path lineToPoint:p];
     }
-    
+     */
     
     // Método para dibujar en la vista
     [path stroke];
@@ -64,6 +68,10 @@
     // DESHABILITAR EL DIBUJO DE LINEAS
     
     // DIBUJAR UNA ESTRELLA QUE QUE QUEDE CENTRADA EN LA VISTA
+    
+    for(int i=0; i<6; i++){
+        
+    }
     
 }
 

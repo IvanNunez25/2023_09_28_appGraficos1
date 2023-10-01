@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "942CF611-9DEF-4780-AAA4-57E5AD1FD0A6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F053AB03-F7A3-4E78-8300-75888EA456F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2023_09_30_appGraficos1/Controller.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-botonDibujar:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ABC5476D-E728-47E0-A526-47C1D4305864"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2023_09_30_appGraficos1/Controller.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-botonDibujar:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D43002B0-EDDD-496E-B466-75E83661CF7C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2023_09_30_appGraficos1/Vista1.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-setDibujo:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D43002B0-EDDD-496E-B466-75E83661CF7C - 26e5562d9468ceb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Vista1 setDibujo:]"
+                  moduleName = "2023_09_30_appGraficos1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanovicxnunez/Documents/EJESAD%2023/2023_09_30_appGraficos1/2023_09_30_appGraficos1/Vista1.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D43002B0-EDDD-496E-B466-75E83661CF7C - 26e5562d9468ceb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Vista1 setDibujo:]"
+                  moduleName = "2023_09_30_appGraficos1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanovicxnunez/Documents/EJESAD%2023/2023_09_30_appGraficos1/2023_09_30_appGraficos1/Vista1.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2B7C326-2D04-49A8-9CE0-1CAB43B47DAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2023_09_30_appGraficos1/Controller.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-botonDibujar:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD47184B-5183-4D9E-8EDF-876A2527AE43"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2023_09_30_appGraficos1/Controller.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-botonDibujar:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DD47184B-5183-4D9E-8EDF-876A2527AE43 - 8f771a07914ecd5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Controller botonDibujar:]"
+                  moduleName = "2023_09_30_appGraficos1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanovicxnunez/Documents/EJESAD%2023/2023_09_30_appGraficos1/2023_09_30_appGraficos1/Controller.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  uuid = "DD47184B-5183-4D9E-8EDF-876A2527AE43 - 8f771a07914ecd5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Controller botonDibujar:]"
+                  moduleName = "2023_09_30_appGraficos1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanovicxnunez/Documents/EJESAD%2023/2023_09_30_appGraficos1/2023_09_30_appGraficos1/Controller.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "DD47184B-5183-4D9E-8EDF-876A2527AE43 - 8f771a07914ecd78"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Controller botonDibujar:]"
+                  moduleName = "2023_09_30_appGraficos1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanovicxnunez/Documents/EJESAD%2023/2023_09_30_appGraficos1/2023_09_30_appGraficos1/Controller.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "612">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C529592-9380-497C-8F44-BA09EB70456E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2023_09_30_appGraficos1/Controller.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-botonDibujar:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7C529592-9380-497C-8F44-BA09EB70456E - 8f771a07914eca25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Controller botonDibujar:]"
+                  moduleName = "2023_09_30_appGraficos1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanovicxnunez/Documents/EJESAD%2023/2023_09_30_appGraficos1/2023_09_30_appGraficos1/Controller.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "812">
+               </Location>
+               <Location
+                  uuid = "7C529592-9380-497C-8F44-BA09EB70456E - 8f771a07914eca25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Controller botonDibujar:]"
+                  moduleName = "2023_09_30_appGraficos1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanovicxnunez/Documents/EJESAD%2023/2023_09_30_appGraficos1/2023_09_30_appGraficos1/Controller.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "896">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

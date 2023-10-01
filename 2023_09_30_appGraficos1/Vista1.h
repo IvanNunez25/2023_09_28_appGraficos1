@@ -9,9 +9,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Vista1 : NSView
+@interface Vista1 : NSView {
+    int tipoDibujo;
+}
 
 -(NSPoint) randomPoint;
+
+-(void) dibujarLineasAleatorias;
+
+-(void) dibujarEstrella;
+
+-(void) setDibujo: (int)numero;
+
+-(int) getDibujo;
 
 @end
 

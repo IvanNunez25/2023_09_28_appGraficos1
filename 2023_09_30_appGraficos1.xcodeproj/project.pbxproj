@@ -15,6 +15,7 @@
 		E65FCE512AC5E8A300C16019 /* _023_09_30_appGraficos1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65FCE502AC5E8A300C16019 /* _023_09_30_appGraficos1UITests.m */; };
 		E65FCE532AC5E8A300C16019 /* _023_09_30_appGraficos1UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65FCE522AC5E8A300C16019 /* _023_09_30_appGraficos1UITestsLaunchTests.m */; };
 		E65FCE612AC5E99000C16019 /* Vista1.m in Sources */ = {isa = PBXBuildFile; fileRef = E65FCE602AC5E99000C16019 /* Vista1.m */; };
+		E6F66A992AC902D200B8C74E /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F66A982AC902D200B8C74E /* Controller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		E65FCE522AC5E8A300C16019 /* _023_09_30_appGraficos1UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _023_09_30_appGraficos1UITestsLaunchTests.m; sourceTree = "<group>"; };
 		E65FCE5F2AC5E99000C16019 /* Vista1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vista1.h; sourceTree = "<group>"; };
 		E65FCE602AC5E99000C16019 /* Vista1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vista1.m; sourceTree = "<group>"; };
+		E6F66A972AC902D200B8C74E /* Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		E6F66A982AC902D200B8C74E /* Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				E65FCE602AC5E99000C16019 /* Vista1.m */,
 				E65FCE3B2AC5E8A300C16019 /* main.m */,
 				E65FCE3D2AC5E8A300C16019 /* _023_09_30_appGraficos1.entitlements */,
+				E6F66A972AC902D200B8C74E /* Controller.h */,
+				E6F66A982AC902D200B8C74E /* Controller.m */,
 			);
 			path = 2023_09_30_appGraficos1;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				E65FCE3C2AC5E8A300C16019 /* main.m in Sources */,
 				E65FCE352AC5E8A200C16019 /* AppDelegate.m in Sources */,
 				E65FCE612AC5E99000C16019 /* Vista1.m in Sources */,
+				E6F66A992AC902D200B8C74E /* Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

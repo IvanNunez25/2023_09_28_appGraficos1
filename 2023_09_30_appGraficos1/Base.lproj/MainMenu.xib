@@ -13,6 +13,12 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="fBF-d9-EcU" customClass="Controller">
+            <connections>
+                <outlet property="areaDibujo" destination="wq4-Af-10F" id="PBU-2D-26K"/>
+                <outlet property="textoDibujo" destination="YTs-Ys-Nsp" id="RyH-a2-MXe"/>
+            </connections>
+        </customObject>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
@@ -684,16 +690,97 @@
         <window title="Mis Gráficos" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
-            <view key="contentView" id="EiT-Mj-1SZ" customClass="Vista1">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="675" height="495"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="675" height="495"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box title="Área de dibujo" translatesAutoresizingMaskIntoConstraints="NO" id="wq4-Af-10F">
+                        <rect key="frame" x="17" y="16" width="641" height="266"/>
+                        <view key="contentView" id="ijy-id-3P1" customClass="Vista1">
+                            <rect key="frame" x="4" y="5" width="633" height="240"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <font key="titleFont" metaFont="system" size="17"/>
+                    </box>
+                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FFX-7Q-DY9">
+                        <rect key="frame" x="18" y="459" width="253" height="16"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Ingresa una palabra que esté disponible: " id="kem-0X-Jja">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YTs-Ys-Nsp">
+                        <rect key="frame" x="277" y="456" width="204" height="21"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="LI3-Zn-QyB">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="textoDibujo:" target="fBF-d9-EcU" id="mdn-Jw-Zdb"/>
+                        </connections>
+                    </textField>
+                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vOp-Hf-jMJ">
+                        <rect key="frame" x="18" y="416" width="126" height="16"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Dibujos disponibles:" id="ZqV-t6-SOj">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pYT-ak-hmV">
+                        <rect key="frame" x="60" y="392" width="106" height="16"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Líneas aleatorias" id="tXM-v1-aON">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Goa-JB-FmW">
+                        <rect key="frame" x="60" y="368" width="49" height="16"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Estrella" id="Epr-ik-SD6">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6V-HM-asD">
+                        <rect key="frame" x="542" y="449" width="120" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Dibujar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="22c-ZR-tuP">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="botonDibujar:" target="fBF-d9-EcU" id="B2K-e4-oSF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="2Sa-46-ERC"/>
+                    <constraint firstItem="vOp-Hf-jMJ" firstAttribute="leading" secondItem="wq4-Af-10F" secondAttribute="leading" id="Jvs-9n-lU4"/>
+                    <constraint firstItem="pYT-ak-hmV" firstAttribute="leading" secondItem="Goa-JB-FmW" secondAttribute="leading" id="PMF-lE-SBi"/>
+                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="leading" secondItem="vOp-Hf-jMJ" secondAttribute="leading" id="Ryt-6X-YNd"/>
+                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="S2w-4L-bKh"/>
+                    <constraint firstItem="YTs-Ys-Nsp" firstAttribute="trailing" secondItem="wq4-Af-10F" secondAttribute="trailing" constant="-174" id="Zbb-N6-nKr"/>
+                    <constraint firstItem="pYT-ak-hmV" firstAttribute="top" secondItem="vOp-Hf-jMJ" secondAttribute="bottom" constant="8" symbolic="YES" id="cR5-ZA-Pew"/>
+                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="baseline" secondItem="YTs-Ys-Nsp" secondAttribute="baseline" id="f3R-PU-Y9J"/>
+                    <constraint firstAttribute="bottom" secondItem="wq4-Af-10F" secondAttribute="bottom" constant="20" symbolic="YES" id="fF4-v2-4XE"/>
+                    <constraint firstItem="wq4-Af-10F" firstAttribute="top" secondItem="Goa-JB-FmW" secondAttribute="bottom" constant="86" id="fzE-lm-7Y7"/>
+                    <constraint firstItem="vOp-Hf-jMJ" firstAttribute="top" secondItem="FFX-7Q-DY9" secondAttribute="bottom" constant="27" id="hL2-gp-YbN"/>
+                    <constraint firstAttribute="trailing" secondItem="YTs-Ys-Nsp" secondAttribute="trailing" constant="194" id="iVx-cV-uES"/>
+                    <constraint firstItem="Goa-JB-FmW" firstAttribute="top" secondItem="pYT-ak-hmV" secondAttribute="bottom" constant="8" symbolic="YES" id="yJG-kl-d5j"/>
+                    <constraint firstItem="YTs-Ys-Nsp" firstAttribute="leading" secondItem="FFX-7Q-DY9" secondAttribute="trailing" constant="8" symbolic="YES" id="ys9-8x-RAp"/>
+                    <constraint firstItem="pYT-ak-hmV" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="62" id="zEX-lH-Veg"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="Voe-Tx-rLC" id="top-28-M4D"/>
             </connections>
-            <point key="canvasLocation" x="200" y="400"/>
+            <point key="canvasLocation" x="239" y="466"/>
         </window>
     </objects>
 </document>

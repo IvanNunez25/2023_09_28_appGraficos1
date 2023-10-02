@@ -705,7 +705,7 @@
                         <font key="titleFont" metaFont="system" size="17"/>
                     </box>
                     <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FFX-7Q-DY9">
-                        <rect key="frame" x="18" y="560" width="102" height="16"/>
+                        <rect key="frame" x="18" y="560" width="308" height="16"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Elige un gráfico:" id="kem-0X-Jja">
                             <font key="font" usesAppearanceFont="YES"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -713,10 +713,7 @@
                         </textFieldCell>
                     </textField>
                     <comboBox focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pjI-fX-VkY">
-                        <rect key="frame" x="125" y="556" width="186" height="23"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="182" id="0oK-yD-mjL"/>
-                        </constraints>
+                        <rect key="frame" x="132" y="556" width="186" height="23"/>
                         <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="u0W-UQ-Wn7">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -733,14 +730,16 @@
                     </comboBox>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="leading" secondItem="wq4-Af-10F" secondAttribute="leading" id="7U9-YJ-hbM"/>
-                    <constraint firstItem="pjI-fX-VkY" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="35" id="KfV-zu-SsS"/>
-                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="baseline" secondItem="pjI-fX-VkY" secondAttribute="baseline" id="NJT-lU-rAO"/>
-                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="QQm-d6-be5"/>
-                    <constraint firstAttribute="trailing" secondItem="wq4-Af-10F" secondAttribute="trailing" constant="20" symbolic="YES" id="UEB-LC-Qp7"/>
-                    <constraint firstAttribute="bottom" secondItem="wq4-Af-10F" secondAttribute="bottom" constant="20" symbolic="YES" id="bLr-pt-WiF"/>
-                    <constraint firstItem="pjI-fX-VkY" firstAttribute="leading" secondItem="FFX-7Q-DY9" secondAttribute="trailing" constant="8" symbolic="YES" id="rKT-O4-APA"/>
-                    <constraint firstItem="wq4-Af-10F" firstAttribute="top" secondItem="pjI-fX-VkY" secondAttribute="bottom" constant="42" id="us4-IX-LYr"/>
+                    <constraint firstItem="wq4-Af-10F" firstAttribute="top" secondItem="pjI-fX-VkY" secondAttribute="bottom" constant="42" id="6LB-Sa-OPz"/>
+                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="baseline" secondItem="pjI-fX-VkY" secondAttribute="baseline" id="GVR-Eb-84O"/>
+                    <constraint firstItem="pjI-fX-VkY" firstAttribute="leading" secondItem="FFX-7Q-DY9" secondAttribute="trailing" constant="-191" id="TZY-zv-oSj"/>
+                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="XNL-Yc-vAU"/>
+                    <constraint firstAttribute="trailing" secondItem="wq4-Af-10F" secondAttribute="trailing" constant="20" symbolic="YES" id="Xcg-Eg-ZFb"/>
+                    <constraint firstItem="FFX-7Q-DY9" firstAttribute="leading" secondItem="wq4-Af-10F" secondAttribute="leading" id="ZD9-2I-H6q"/>
+                    <constraint firstItem="pjI-fX-VkY" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="133" id="cf0-5Q-l68"/>
+                    <constraint firstItem="pjI-fX-VkY" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="35" id="hrA-Y2-0uz"/>
+                    <constraint firstAttribute="bottom" secondItem="wq4-Af-10F" secondAttribute="bottom" constant="20" symbolic="YES" id="nfB-wB-hrY"/>
+                    <constraint firstAttribute="trailing" secondItem="pjI-fX-VkY" secondAttribute="trailing" constant="219" id="wTJ-EQ-79c"/>
                 </constraints>
             </view>
             <connections>

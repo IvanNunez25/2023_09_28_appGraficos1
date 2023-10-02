@@ -25,14 +25,16 @@
     
     [_btnOpciones setEditable:NO];
     [_btnOpciones addItemsWithObjectValues:items];
+    
+    [_btnOpciones selectItemAtIndex:0];
+    
+    [self botonOpciones:_btnOpciones];
 }
 
 - (IBAction)botonOpciones:(NSComboBox *)sender {
     
     /* La variable 'valor' contendrá el valor introducido en el textField */
-    //NSString *valor = [[NSString alloc] initWithString:_textoDibujo.stringValue];
-NSString *valor = [[NSString alloc] initWithString:[_btnOpciones stringValue]];
-    
+    NSString *valor = [[NSString alloc] initWithString:[_btnOpciones stringValue]];
     
     /* key será un arreglo con las llaves obtenidas del Diccionario que tengan el objeto de la variable 'valor' */
     NSArray *key = [[NSArray alloc] init];

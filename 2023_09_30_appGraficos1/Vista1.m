@@ -94,6 +94,48 @@
     return tipoDibujo;
 }
 
+-(void) dibujarGradienteRadial {
+    
+    NSRect borde = [self bounds];
+    NSGradient *gradiente = [[NSGradient alloc] initWithStartingColor:[NSColor yellowColor] endingColor:[NSColor redColor]];
+    
+    NSPoint puntoCentro = NSMakePoint(NSMidX(borde), NSMidY(borde));
+    NSPoint punto2 = NSMakePoint(puntoCentro.x + 60, puntoCentro.y + 60);
+    
+    CGFloat radio = MIN((borde.size.width / 10.0) - 2.0, (borde.size.height / 2.0) - 2.0);
+    
+    [gradiente drawFromCenter:puntoCentro radius:radio toCenter:punto2 radius:1 options:0];
+}
+
+-(void) dibujarTriangulo {
+    
+    NSBezierPath *path = [[NSBezierPath alloc] init];
+    [path setLineWidth: 3.5];
+    [[NSColor blueColor] set];
+    
+    int triangulo [4][2] = {{10,10},{100, 10},{10,100},{10,10}};
+    
+    NSPoint punto;
+    punto.x = triangulo[0][0];
+    punto.y = triangulo[0][1];
+    
+    [path moveToPoint:punto];
+    
+    for(int i=1; i<4; i++){
+        punto.x = triangulo[i][0];
+        punto.y = triangulo[i][1];
+        [path lineToPoint:punto];
+    }
+    
+    [path stroke];
+    
+    [[NSColor colorWithSRGBRed:0.4 green:0.2 blue:0.7 alpha:1] set];
+    
+    [path fill];
+    
+    
+}
+
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     
@@ -115,6 +157,14 @@
             
         case 2:
             [self dibujarEstrella];
+            break;
+            
+        case 3:
+            [self dibujarTriangulo];
+            break;
+            
+        case 4:
+            [self dibujarGradienteRadial];
             break;
             
         default:

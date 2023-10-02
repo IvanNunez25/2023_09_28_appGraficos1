@@ -12,13 +12,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Controller : NSObject {
-    
+    NSMutableDictionary *lista;
 }
 
-@property (weak) IBOutlet NSTextField *textoDibujo;
 @property (weak) IBOutlet NSBox *areaDibujo;
+@property (weak) IBOutlet NSComboBox *btnOpciones;
 
-- (IBAction)botonDibujar:(NSButton *)sender;
+- (IBAction)botonOpciones:(NSComboBox *)sender;
 
 @end
 

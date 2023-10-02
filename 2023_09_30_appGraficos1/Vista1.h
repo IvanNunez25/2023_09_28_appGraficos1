@@ -23,6 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(int) getDibujo;
 
+-(void) dibujarGradienteRadial;
+
+-(void) dibujarTriangulo;
+
 @end
 
 NS_ASSUME_NONNULL_END

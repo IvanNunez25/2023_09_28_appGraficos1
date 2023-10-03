@@ -18,6 +18,8 @@
     [lista setObject:@"Estrella" forKey:@2];
     [lista setObject:@"Triangulo" forKey:@3];
     [lista setObject:@"Gradiente" forKey:@4];
+    [lista setObject:@"Curva Bezier 1" forKey:@5];
+    [lista setObject:@"Curva Bezier 2" forKey:@6];
     
     NSArray *items = [lista allValues];
     

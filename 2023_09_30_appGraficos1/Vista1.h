@@ -27,6 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) dibujarTriangulo;
 
+-(void) dibujarCurvaBezier1;
+
+-(void) dibujarCurvaBezier2;
+
 @end
 
 NS_ASSUME_NONNULL_END

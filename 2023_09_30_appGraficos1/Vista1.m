@@ -113,7 +113,7 @@
     [path setLineWidth: 3.5];
     [[NSColor blueColor] set];
     
-    int triangulo [4][2] = {{10,10},{100, 10},{10,100},{10,10}};
+    int triangulo [4][2] = {{5,5},{250,5},{5,250},{5,5}};
     
     NSPoint punto;
     punto.x = triangulo[0][0];
@@ -133,6 +133,59 @@
     
     [path fill];
     
+    
+}
+
+-(void) dibujarCurvaBezier1 {
+    
+    [[NSColor blueColor] set];
+    
+    NSBezierPath* aPath = [NSBezierPath bezierPath];
+    
+    [aPath moveToPoint:NSMakePoint(0.0, 0.0)];
+    [aPath lineToPoint:NSMakePoint(100.0, 100.0)];
+    [aPath curveToPoint:NSMakePoint(180.0, 210.0)
+          controlPoint1:NSMakePoint(60.0, 20.0)
+          controlPoint2:NSMakePoint(280.0, 100.0)];
+    
+    /* Dibujar un rectangulo */
+    [aPath appendBezierPathWithRect:NSMakeRect(20.0, 160.0, 80.0, 50.0)];
+    
+    /* L cursiva */
+    [aPath moveToPoint:NSMakePoint(200, 200)];
+    [aPath lineToPoint:NSMakePoint(210, 220)];
+    //[aPath curveToPoint:210 controlPoint:
+
+    [aPath stroke];
+    
+    
+}
+
+-(void) dibujarCurvaBezier2 {
+    
+    NSPoint p1 = NSMakePoint(100, 100);
+    NSPoint p2 = NSMakePoint(200, 300);
+    NSPoint p3 = NSMakePoint(300, 100);
+    
+    /* Puntos de control */
+    NSPoint control1 = NSMakePoint(200, 200);
+    NSPoint control2 = NSMakePoint(200, 0);
+    
+    /* Construitr path para el triangulo */
+    NSBezierPath *path = [NSBezierPath bezierPath];
+    [path moveToPoint:p1];
+    [path lineToPoint:p2];
+    [path lineToPoint:p3];
+    [path curveToPoint:p1 controlPoint1:control1 controlPoint2:control2];
+    
+    [path closePath];
+    
+    [[NSColor orangeColor] set];
+    [path fill];
+    
+    [path stroke];
+    
+    /* Tarea: Utilizar las curvas de Bezier para crear una letra en cursiva (Ejemplo L) */
     
 }
 
@@ -166,6 +219,14 @@
         case 4:
             [self dibujarGradienteRadial];
             break;
+            
+        case 5:
+            [self dibujarCurvaBezier1];
+            break;
+            
+        case 6:
+            [self dibujarCurvaBezier2];
+            break;;
             
         default:
             
